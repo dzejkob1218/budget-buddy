@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charSet="utf-8"/>
+    <title>Supercharged language agnostic charts — Chartisan</title>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,600,700&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap"
+          rel="stylesheet"/>
+    <meta name="viewport" content="initial-scale=1.0, width=device-width"/>
+    <meta name="description"
+          content="Chartisan is a new way to create charts using a language agnostic approach. Create and re-use charts with ease independently of the back-end."/>
+    <meta property="og:title" content="Supercharged language agnostic charts"/>
+    <meta property="og:description"
+          content="Chartisan is a new way to create charts using a language agnostic approach. Create and re-use charts with ease independently of the back-end."/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:locale" content="en_GB"/>
+    <meta property="og:site_name" content="Chartisan"/>
+    <meta property="og:image" content="/banner.jpg"/>
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:site" content="@ErikCampobadal"/>
+    <meta name="twitter:creator" content="@ErikCampobadal"/>
+    <meta name="twitter:title" content="Supercharged language agnostic charts"/>
+    <meta name="twitter:descrption"
+          content="Chartisan is a new way to create charts using a language agnostic approach. Create and re-use charts with ease independently of the back-end."/>
+    <meta name="twitter:image" content="/banner.jpg"/>
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png"/>
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png"/>
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png"/>
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png"/>
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png"/>
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/>
+    <link rel="manifest" href="/manifest.json"/>
+    <meta name="msapplication-TileColor" content="#f67280"/>
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png"/>
+    <meta name="theme-color" content="#f67280"/>
+    <meta name="robots" content="index, follow"/>
+    <meta name="next-head-count" content="36"/>
+    <link rel='preload' as='style'
+          href='https://d33wubrfki0l68.cloudfront.net/css/2ddb4c3b0e2259a53c09a80e3b7fba00a6bf48bc/_next/static/css/099cf234cc287198d29b.css'/>
+    <link rel='stylesheet'
+          href='https://d33wubrfki0l68.cloudfront.net/css/2ddb4c3b0e2259a53c09a80e3b7fba00a6bf48bc/_next/static/css/099cf234cc287198d29b.css'/>
+    <link rel='preload' as='style'
+          href='https://d33wubrfki0l68.cloudfront.net/css/2d1e5e42f88edb91c8a35fefdc06380da365dbb8/_next/static/css/d78a0a9f1fa2bb03487c.css'/>
+    <link rel='stylesheet'
+          href='https://d33wubrfki0l68.cloudfront.net/css/2d1e5e42f88edb91c8a35fefdc06380da365dbb8/_next/static/css/d78a0a9f1fa2bb03487c.css'/>
+    <link rel="preload" href="/_next/static/StuHddX9D5Y0AZ60i5_yB/pages/_app.js" as="script"/>
+    <link rel="preload" href="/_next/static/StuHddX9D5Y0AZ60i5_yB/pages/index.js" as="script"/>
+    <link rel="preload" href="/_next/static/runtime/webpack-cdef4f11d3b7898a76d9.js" as="script"/>
+    <link rel="preload" href="/_next/static/chunks/framework.7dfd02d307191d63a37e.js" as="script"/>
+    <link rel="preload" href="/_next/static/chunks/79bd363c.4f570b4baecd3a67b496.js" as="script"/>
+    <link rel="preload" href="/_next/static/chunks/commons.34684228d50c6c140f9e.js" as="script"/>
+    <link rel="preload" href="/_next/static/runtime/main-51be230be2503487f5e4.js" as="script"/>
+    <link rel="preload" href="/_next/static/chunks/05d954cf.771ecc4726b1aa7aebff.js" as="script"/>
+    <link rel="preload" href="/_next/static/chunks/4a3ea9cd.c60ec7f37781c1b0f84f.js" as="script"/>
+    <link rel="preload" href="/_next/static/chunks/75fc9c18.0d22175766b348a5eee7.js" as="script"/>
+    <link rel="preload" href="/_next/static/chunks/4a6a36a79ff3a443a254180630d992f502df5562.213433201f58943057b4.js"
+          as="script"/>
+    <link rel="preload" href="/_next/static/chunks/13818658c371a39e16f143ce99d331023bcd4bb9.f686b6e6ff606a7ed623.js"
+          as="script"/>
+    <link rel="preload" href="/_next/static/chunks/5fccd77488d813a24b268d04e8111a9c2f1def38.cd66112d1bef8505fe49.js"
+          as="script"/>
+</head>
+<body>
+<div id="__next">
+    <header><a href="https://github.com/sponsors/ConsoleTVs" class="bg-white">
+        <div class="container mx-auto px-4">
+            <div class="py-3 flex items-center justify-center">
+                <div
+                    class="hidden lg:block rounded-full border border-gray-400 text-primary uppercase tracking-widest font-semibold text-xs px-4 py-1">
+                    News
+                </div>
+                <div class="ml-2 text-sm text-center font-semibold">Chartisan will be ported to mobile with Flutter if
+                    it meets the github goal.
+                </div>
+                <svg class="ml-2 flex-none stroke-current" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M10 6H6C4.89543 6 4 6.89543 4 8V18C4 19.1046 4.89543 20 6 20H16C17.1046 20 18 19.1046 18 18V14M14 4H20M20 4V10M20 4L10 14"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+            </div>
+        </div>
+    </a>
+        <div class="gradient relative z-30">
+            <div class="container mx-auto px-4">
+                <div class="py-6 flex items-center justify-between"><a class="flex items-center" href="/">
+                    <div class="uppercase tracking-widest font-bold font-quicksand">Chartisan</div>
+                    <div
+                        class="ml-4 border border-white px-1 font-semibold text-xs uppercase tracking-widest rounded-md">
+                        Beta
+                    </div>
+                </a>
+                    <div class="xl:-mx-2 flex items-center">
+                        <div class="xl:px-2"><a class="px-4 py-2 rounded-md flex space-x-2"
+                                                style="background-color:rgba(255, 255, 255, 0)" href="/roadmap">
+                            <svg class="stroke-current" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M17.6569 16.6569C16.7202 17.5935 14.7616 19.5521 13.4138 20.8999C12.6327 21.681 11.3677 21.6814 10.5866 20.9003C9.26234 19.576 7.34159 17.6553 6.34315 16.6569C3.21895 13.5327 3.21895 8.46734 6.34315 5.34315C9.46734 2.21895 14.5327 2.21895 17.6569 5.34315C20.781 8.46734 20.781 13.5327 17.6569 16.6569Z"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path
+                                    d="M15 11C15 12.6569 13.6569 14 12 14C10.3431 14 9 12.6569 9 11C9 9.34315 10.3431 8 12 8C13.6569 8 15 9.34315 15 11Z"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                            <div class="hidden xl:block">Roadmap</div>
+                        </a></div>
+                        <div class="xl:px-2"><a class="px-4 py-2 rounded-md flex space-x-2"
+                                                style="background-color:rgba(255, 255, 255, 0)" href="/documentation">
+                            <svg class="stroke-current" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 6.25278V19.2528M12 6.25278C10.8321 5.47686 9.24649 5 7.5 5C5.75351 5 4.16789 5.47686 3 6.25278V19.2528C4.16789 18.4769 5.75351 18 7.5 18C9.24649 18 10.8321 18.4769 12 19.2528M12 6.25278C13.1679 5.47686 14.7535 5 16.5 5C18.2465 5 19.8321 5.47686 21 6.25278V19.2528C19.8321 18.4769 18.2465 18 16.5 18C14.7535 18 13.1679 18.4769 12 19.2528"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                            <div class="hidden xl:block">Documentation</div>
+                        </a></div>
+                        <div class="xl:px-2"><a href="https://github.com/Chartisan/Chartisan"
+                                                class="px-4 py-2 rounded-md flex space-x-2"
+                                                style="background-color:rgba(255, 255, 255, 0)">
+                            <svg class="stroke-current" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10 20L14 4M18 8L22 12L18 16M6 16L2 12L6 8" stroke-width="2"
+                                      stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                            <div class="hidden xl:block">Github</div>
+                        </a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="relative">
+            <div class="gradient-shadow">
+                <div class="pt-12 pb-32 gradient shadow-lg ellipse">
+                    <div class="container mx-auto flex flex-col items-center justify-center"><h1
+                        class="font-quicksand font-semibold">Chartisan</h1><h4 class="font-quicksand text-center">
+                        Supercharged language agnostic charts</h4></div>
+                </div>
+            </div>
+            <div class="absolute inset-x-0 bottom-0 flex items-center justify-center h-12"><a
+                class="mx-2 mt-8 bg-white rounded-full h-full px-6 text-black flex items-center justify-center shadow-md"
+                href="/documentation">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M13 9L16 12M16 12L13 15M16 12L8 12M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
+                        stroke="#4A5568" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+                <span class="ml-4 uppercase tracking-widest font-medium text-sm">Getting started</span></a></div>
+        </div>
+    </header>
+    <main>
+        <div>
+            <div class="container mx-auto px-4">
+                <div class="mt-24 grid gap-6 grid-cols-1 lg:grid-cols-3">
+                    <div style="opacity:0;transform:translateY(50px) translateZ(0)">
+                        <div>
+                            <div class="relative z-10 flex justify-center -mb-8">
+                                <div class="bg-white border rounded-md p-6 shadow-md"><img class="w-12 h-12"
+                                                                                           src="https://d33wubrfki0l68.cloudfront.net/b8dbe0f4ed1704d4ece1ce99f3f23fe59a4dd35b/a3898/svg/030-worldwide.svg"
+                                                                                           alt="Language Agnostic"/>
+                                </div>
+                            </div>
+                            <div class="py-12 px-6 xl:px-12 bg-white text-black border shadow-md rounded-md relative">
+                                <div class="flex flex-col items-center justify-center"><h5
+                                    class="uppercase text-lg font-semibold tracking-widest font-quicksand">Language
+                                    Agnostic</h5>
+                                    <div class="text-gray-500 text-center uppercase text-xs tracking-widest">Write it
+                                        once and forget it
+                                    </div>
+                                    <div class="mt-6 text-center leading-relaxed text-gray-700">Written without a
+                                        specific language or framework in mind. Build and configure your chart once, and
+                                        expect it to work with all the supported backends.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="opacity:0;transform:translateY(50px) translateZ(0)">
+                        <div>
+                            <div class="relative z-10 flex justify-center -mb-8">
+                                <div class="bg-white border rounded-md p-6 shadow-md"><img class="w-12 h-12"
+                                                                                           src="https://d33wubrfki0l68.cloudfront.net/54fa9b63cb8c39a1e83988e4546ac6d111a63a07/fb48e/svg/032-gauge.svg"
+                                                                                           alt="Performant"/></div>
+                            </div>
+                            <div class="py-12 px-6 xl:px-12 bg-white text-black border shadow-md rounded-md relative">
+                                <div class="flex flex-col items-center justify-center"><h5
+                                    class="uppercase text-lg font-semibold tracking-widest font-quicksand">
+                                    Performant</h5>
+                                    <div class="text-gray-500 text-center uppercase text-xs tracking-widest">Does not
+                                        impact page load
+                                    </div>
+                                    <div class="mt-6 text-center leading-relaxed text-gray-700">The data is fetched in
+                                        the background, allowing your application to perform as always does without
+                                        slowing down the page loading time.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="opacity:0;transform:translateY(50px) translateZ(0)">
+                        <div>
+                            <div class="relative z-10 flex justify-center -mb-8">
+                                <div class="bg-white border rounded-md p-6 shadow-md"><img class="w-12 h-12"
+                                                                                           src="https://d33wubrfki0l68.cloudfront.net/560794b4502d7c10d0eede4a0aca99bbdd633d9e/b077d/svg/038-bar-chart-4.svg"
+                                                                                           alt="Customizable"/></div>
+                            </div>
+                            <div class="py-12 px-6 xl:px-12 bg-white text-black border shadow-md rounded-md relative">
+                                <div class="flex flex-col items-center justify-center"><h5
+                                    class="uppercase text-lg font-semibold tracking-widest font-quicksand">
+                                    Customizable</h5>
+                                    <div class="text-gray-500 text-center uppercase text-xs tracking-widest">Fully
+                                        customizable to the core
+                                    </div>
+                                    <div class="mt-6 text-center leading-relaxed text-gray-700">Chartisan&#x27;s hooks
+                                        allow charts to be customized to the core, being able to control every aspect of
+                                        the chart directly on the front-end library.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-24 grid grid-cols-3 lg:grid-cols-8 gap-12">
+                    <div class="relative flex flex-col items-center justify-center"
+                         style="opacity:0;transform:translateY(50px) translateZ(0)"><img class="w-16 h-16 "
+                                                                                         src="https://d33wubrfki0l68.cloudfront.net/331f3cdad457ae528058d7900b1dc24a5dafaa29/a46f4/logos/php.svg"
+                                                                                         alt="PHP"/></div>
+                    <div class="relative flex flex-col items-center justify-center"
+                         style="opacity:0;transform:translateY(50px) translateZ(0)"><img class="w-16 h-16 "
+                                                                                         src="https://d33wubrfki0l68.cloudfront.net/14fb2ee58e4afbc58fc7123e5228db7e3622555e/5d1ca/logos/node.svg"
+                                                                                         alt="Node"/></div>
+                    <div class="relative flex flex-col items-center justify-center"
+                         style="opacity:0;transform:translateY(50px) translateZ(0)"><img class="w-16 h-16 "
+                                                                                         src="https://d33wubrfki0l68.cloudfront.net/4e2e63615a44881954e8ffb7f0c7fb3d3e5ffe97/0badb/logos/python.svg"
+                                                                                         alt="Python"/></div>
+                    <div class="relative flex flex-col items-center justify-center"
+                         style="opacity:0;transform:translateY(50px) translateZ(0)"><img class="w-16 h-16 "
+                                                                                         src="https://d33wubrfki0l68.cloudfront.net/0cd82f33352563c9cf918d9f4fa0504cc6b84526/4e5b9/logos/go.svg"
+                                                                                         alt="Go"/></div>
+                    <div class="relative flex flex-col items-center justify-center"
+                         style="opacity:0;transform:translateY(50px) translateZ(0)"><img class="w-16 h-16 "
+                                                                                         src="https://d33wubrfki0l68.cloudfront.net/9ed2fee3387c86eff0ae08024a4d0147af2c2cf0/a929e/logos/dart.svg"
+                                                                                         alt="Dart"/></div>
+                    <div class="relative flex flex-col items-center justify-center"
+                         style="opacity:0;transform:translateY(50px) translateZ(0)"><img class="w-16 h-16 "
+                                                                                         src="https://d33wubrfki0l68.cloudfront.net/3b35054afa1597deb919ce843db8540226935dc2/3546d/logos/rust.svg"
+                                                                                         alt="Rust"/></div>
+                    <div class="relative flex flex-col items-center justify-center"
+                         style="opacity:0;transform:translateY(50px) translateZ(0)"><img class="w-16 h-16 "
+                                                                                         src="https://d33wubrfki0l68.cloudfront.net/c98f5e679c1c46262b619bb5dee70478908c4136/c9a03/logos/javascript.svg"
+                                                                                         alt="Javascript"/></div>
+                    <div class="relative flex flex-col items-center justify-center"
+                         style="opacity:0;transform:translateY(50px) translateZ(0)"><img class="w-16 h-16 "
+                                                                                         src="https://d33wubrfki0l68.cloudfront.net/0a6af6143e936cedc834d2d5af35987e0e39e94e/27329/logos/typescript.svg"
+                                                                                         alt="Typescript"/></div>
+                </div>
+                <div class="mt-24">
+                    <div class="grid grid-cols-3 col-gap-6 row-gap-12">
+                        <div class="col-span-3 lg:col-span-2"
+                             style="opacity:0;transform:translateY(50px) translateZ(0)">
+                            <div class="py-12 px-6 xl:px-12 bg-white text-black border shadow-md rounded-md relative">
+                                <div class="absolute inset-x-0 top-0 flex items-center justify-center h-12">
+                                    <div
+                                        class="font-semibold mx-2 -mt-12 rounded-full h-full px-6 flex items-center justify-center shadow-md gradient text-white">
+                                        <span class="uppercase tracking-widest text-sm">Live example</span></div>
+                                </div>
+                                <div style="height:400px"></div>
+                            </div>
+                        </div>
+                        <div class="col-span-3 lg:col-span-1"
+                             style="opacity:0;transform:translateY(50px) translateZ(0)">
+                            <div class="py-12 px-6 xl:px-12 bg-white text-black border shadow-md rounded-md relative">
+                                <div class="absolute inset-x-0 top-0 flex items-center justify-center h-12">
+                                    <div
+                                        class="font-semibold mx-2 -mt-12 rounded-full h-full px-6 flex items-center justify-center shadow-md gradient text-white">
+                                        <span class="uppercase tracking-widest text-sm">Live example</span></div>
+                                </div>
+                                <div style="height:400px"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="flex flex-col items-center">
+            <div class="my-12 uppercase tracking-widest text-xs font-medium text-gray-400 text-center">Copyright ©
+                <!-- -->2020<!-- --> Èrik C. Forés — All rights reserved.
+            </div>
+        </div>
+    </footer>
+</div>
+<script id="__NEXT_DATA__" type="application/json">{
+    "props": {
+        "pageProps": {}
+    },
+    "page": "/",
+    "query": {},
+    "buildId": "StuHddX9D5Y0AZ60i5_yB",
+    "nextExport": true,
+    "autoExport": true,
+    "isFallback": false
+}</script>
+<script nomodule
+        src='https://d33wubrfki0l68.cloudfront.net/js/665a8ca7c7f7c99bde301b2f0d2f0e012714bdd4/_next/static/runtime/polyfills-8507aab315ac48d5e0a8.js'></script>
+<script async data-next-page='/_app'
+        src='https://d33wubrfki0l68.cloudfront.net/js/3b1a818dd2ce7ee008bc55a2297961a194dc4b36/_next/static/imsfcdu9vruzdtqnmq5ne/pages/_app.js'></script>
+<script async data-next-page='/'
+        src='https://d33wubrfki0l68.cloudfront.net/js/cdbcc13bcfd33e589c40cf3aec742266f2636d95/_next/static/imsfcdu9vruzdtqnmq5ne/pages/index.js'></script>
+<script async src='https://d33wubrfki0l68.cloudfront.net/bundles/9305dcc9914cb53c51eb34fc03901d6033a7e2c6.js'></script>
+</body>
+</html>
